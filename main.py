@@ -55,11 +55,14 @@ query = pd.DataFrame({
 
 # Predict the rating
 if st.button('Predict'):
-    # Make the prediction
-    rating_prediction = regressor.predict(query.values)
+    if votes == 0 and cost == 0:
+        st.error("Cannot predict rating when both Votes and Cost are zero.")
+    else:
+        # Make the prediction
+        rating_prediction = regressor.predict(query.values)
 
-    # Round the prediction to 2 decimal places
-    rounded_prediction = np.round(rating_prediction[0], 2)  # Extract the value and round
+        # Round the prediction to 2 decimal places
+        rounded_prediction = np.round(rating_prediction[0], 2)  # Extract the value and round
 
-    # Display the prediction
-    st.title('The predicted rating is: ' + str(rounded_prediction))
+        # Display the prediction
+        st.title('The predicted rating is: ' + str(rounded_prediction))
