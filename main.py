@@ -56,7 +56,7 @@ query = pd.DataFrame({
 # Predict the rating
 if st.button('Predict'):
     if votes == 0 or cost == 0:
-        st.error("Cannot predict rating when either Votes and Cost are zero.")
+        st.error("Cannot predict rating when either Votes or Cost is zero.")
     else:
         # Make the prediction
         rating_prediction = regressor.predict(query.values)
