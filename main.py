@@ -37,10 +37,10 @@ restaurant_type = st.selectbox('Restaurant Type', list(rest_type_dict.keys()))
 cuisines = st.selectbox('Cuisines', list(cuisines_dict.keys()))
 
 # Number input for Votes
-votes = st.number_input('Votes', value=0)
+votes = st.number_input('Votes', value=0, min_value=0)
 
 # Number input for Cost
-cost = st.number_input('Cost', value=0)
+cost = st.number_input('Cost', value=0, min_value=0)
 
 # Prepare the input data as a DataFrame
 query = pd.DataFrame({
