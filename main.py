@@ -20,8 +20,9 @@ with tabs[0]:
     st.title('Problem Statement')
     st.markdown('The primary objective of this project is to conduct a comprehensive Exploratory Data Analysis (EDA) on a given dataset and develop an optimized Machine Learning Model. The model aims to assist restaurants in predicting their respective ratings by considering multiple relevant features. Through thorough EDA, the dataset is carefully analyzed to gain valuable insights. Subsequently, a suitable Machine Learning Model is built, which effectively leverages these insights to accurately predict restaurant ratings. The optimized model provides a valuable tool for restaurants to make informed decisions based on various factors impacting their ratings.')
 
-    df_data_desctription = pd.read_csv('data desscription - Sheet1.csv')
+    df_data_desctription = pd.read_csv('data description.csv')
     st.title('Data Description')
+    st.markdown('The data for the "Zomato Bangalore Restaurants" dataset was gathered from the Zomato platform, a well-known online service that facilitates food delivery and provides information about restaurants. Zomato collects data from various sources, including user reviews, restaurant menus, and official listings. The dataset offers insights into the restaurant landscape in Bangalore, enabling analysis and exploration of various factors influencing dining choices.')
     st.table(df_data_desctription)
 
     st.title('Proposed Solution')
