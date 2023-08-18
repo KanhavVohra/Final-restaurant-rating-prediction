@@ -33,8 +33,7 @@ Data source: [https://www.kaggle.com/datasets/himanshupoddar/zomato-bangalore-re
 
 
 ### link to Streamlit App
-URL : https://restaurant-rating-prediction-nqz4pwi4pk.streamlit.app/
-
+URL : 
 
 
 
